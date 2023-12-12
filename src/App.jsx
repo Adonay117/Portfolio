@@ -1,49 +1,73 @@
 import './css/App.css';
-import './css/hover.css'
-import Skill from './components/Skill';
-import Project from './components/Project'
-import Services from './components/Services'
-import Header from './components/Header'
-
-
-
-
-
-
+import './css/hover.css';
+import About from './components/about/About';
+import Nav from './components/nav/Nav';
+import Card from './components/CardProject/Card';
+import Title from './components/title/Title';
+import Design from './components/desing/Desing'
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Element } from 'react-scroll';
 
 function App() {
 
-  /*var cursor2 = document.querySelector(".cursor2");
-  var header = document.querySelector(".header");
-  
-  
-  document.querySelector(".icons-network").addEventListener("mouseover", function () {
-    header.classList.add("icons-hovered");
-  });
-  
-  document.querySelector(".icons-network").addEventListener("mouseout", function () {
-    header.classList.remove("icons-hovered");
-  });
-  
-  
-  
-  
-  document.addEventListener("mousemove", function (e) {
-    cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-  });*/
 
   return (
+    <Router>
     <div className="App">
-    <Header/>
-    <Services/>
-    <Skill/>
-    <Project/>
-   
-
-
+     <Nav/>
+    
+     <Element name="about">
+     <div className="about" id='#about'>
       
+      <About/>
+      </div>
+    </Element>
 
+    <Element name="project">
+    <Title  id='project'
+      title='PORTFOLIO'
+      
+      />
+    
+      <div className="container-card">
+      <Card
+      ImageProject='portfolio'
+      TitleProject=' Portfolio Web'
+      DescriptionProject='Creation of my portfolio where I provide my information as I project it '
+      tag1='React'
+      tag2='Js'
+      LinkView='https://adonayaragon.vercel.app/'
+      LinkCode='https://github.com/Adonay117/Portfolio'
+      
+      
+      
+      />
+
+    
+
+
+      </div>
+      
+    </Element>
+      
+     
+
+    <Element name='design'>
+      
+    <Title
+      title='DESIGN'
+      
+      />
+
+   <div className='containerDesing'><Design/></div>
+
+    
+
+
+    
+    </Element>
     </div>
+    </Router>
   );
 }
 
