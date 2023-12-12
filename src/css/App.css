@@ -27,7 +27,7 @@ body{
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 100vh;
+
 
   
 }
@@ -37,7 +37,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding-top: 4.7rem;
+
 
 }
 .containerDesing{
@@ -66,20 +67,17 @@ body{
   }
 
   .container-card{
-    height: auto;
+    
   }
   .about{
-    height: auto;
+  
     padding-top: 4.7rem;
   }
   .containerDesing{
-    height: auto;
+   
   }
   
-  .navElement{
-    margin-right: 1rem;
-  }
-
+ 
   
 }
 
