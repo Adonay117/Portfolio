@@ -30,7 +30,20 @@ function App() {
       />
     
       <div className="container-card">
-      <Card
+  
+       <Card
+      ImageProject='score'
+      TitleProject='Design Score'
+      DescriptionProject='It is a frontend mentor challenge where you can use CSS and HTML. In my case, I decided to add JSX and extract the data with a JSON file. '
+      tag1='React'
+      tag2='Js'
+      LinkView='https://score-nu.vercel.app/'
+      LinkCode='https://github.com/Adonay117/score'
+      
+      
+      
+      />
+          <Card
       ImageProject='portfolio'
       TitleProject=' Portfolio Web'
       DescriptionProject='Creation of my portfolio where I provide my information as I project it '
