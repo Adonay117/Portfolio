@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Nav.css";
 import '../../css/hover.css'
 
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link} from 'react-scroll';
 
 
 
@@ -45,15 +45,15 @@ function Nav() {
       </Link>
 	  <Link 
         activeClass="active"
-        to="project"
+        to="work"
         spy={true}
         smooth={true}
         offset={-70}
         duration={500}
       >
-        Project
+        Work
       </Link>
-	  <Link 
+	  {/* <Link 
         activeClass="active"
         to="design"
         spy={true}
@@ -62,7 +62,7 @@ function Nav() {
         duration={500}
       >
         Design
-      </Link>
+      </Link> */}
 
 				
 				<button

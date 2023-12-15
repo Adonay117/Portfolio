@@ -6,8 +6,8 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 export default function Design() {
   return (
-    <Box sx={{ width: 700, height: 650}}>
-      <ImageList variant="masonry" cols={2} gap={10}>
+    <Box sx={{ width: 700, height: 450, overflowY: 'scroll' }}>
+      <ImageList variant="masonry" cols={4} gap={10}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -16,7 +16,6 @@ export default function Design() {
               alt={item.title}
               loading="lazy"
             />
-            
           </ImageListItem>
         ))}
       </ImageList>
@@ -28,22 +27,21 @@ const itemData = [
   {
     img: require('../img/bandini.jpg'),
     
-    author: 'Bandini Giveaway',
+
   },
   {
     img: require("../img/flye.jpg"),
    
-    author: 'sticker Bottle',
+
   },
   {
     img: require("../img/antojos.jpg") ,
 
-    author: 'post Antojos',
+  
   },
   {
     img: require("../img/bandini-1.jpg") ,
  
-    author: 'post Antojos',
   },
  
   

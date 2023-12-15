@@ -1,59 +1,80 @@
 
+.card-project{
+    display: flex;
+    height: 490px;
+    min-width: 100px;
+    border-radius: 20px;
+    background-color: hsl(72, 18%, 89%);
+    
+    color: #212121;
+    position: relative;
+
+}
 .card-info{
+    
     display: flex;
     flex-direction: column;
-    width: 19.625rem;
-    height: 15.9rem;
-    background-color: hsla(0, 5%, 88%, 0.95);
+    width: 400px;
+    height: 290px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
-}
-.card-project{
-    display: flex;
-    flex-direction: column;
-    color: #414141;
+    
    
+    
 }
 
+.card-description div{
+  text-align: center;
+  flex-direction: row;
+  font-size: 15px;
+     
+  
+}
+.card-description{
+    display: flex;
+    flex-grow: 1;
    
+    gap: 1rem;
+}
+
+
+.card-image{
+    display: flex;
+    flex-grow: 1;
+
+}
+
+.card-image img{
+   height: 270px;
+   width: 100%;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.card-link{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+
+ 
+}
+   
+.contentJustify{
+    padding: 1rem;
+    font-size: 20px;
+}
+
+
+
+
 
 
     
 
 
-.card-title{
-    font-size: 20px;
-    letter-spacing: 0.2rem;
-}
 
-.card-description{
-    align-items: center;
-    padding: 1rem;
-    font-size: 18px;
-}
-
-.card-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:3rem;
-  
-}
-
-
-
-.card-image img{
-  width: 19.625rem;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  height: 11rem;
-  image-rendering: pixelated;
-  
-}
 
 
 

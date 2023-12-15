@@ -3,15 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Exo 2';
-
+ 
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+
 
 body{
-
+ 
+  box-sizing: border-box;
   background: #212121;
 
   background-size: cover;
@@ -19,19 +18,26 @@ body{
   color: #C1D476
 }
 
+
 .container-card{
   display: flex;
-  flex-direction: row;
-  gap: 5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+
   justify-content: center;
-  align-items: center;
-  align-content: center;
-
-
-  
+  flex-grow: 1;
 }
-
+.cardProjects{
+  display: flex;
+   gap: 2rem;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.container-design{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
 .about{
   display: flex;
   flex-direction: column;
@@ -41,17 +47,19 @@ body{
 
 
 }
-.containerDesing{
+/* .containerDesing{
   display: flex;
-  align-items: center;
-  justify-content: center;
 
-}
+  justify-content: center;
+  height: 100vh;
+ 
+
+} */
 
 .App {
   display: flex;
   flex-direction: column;
-  margin: 0rem 1rem 0rem 1rem;
+  margin: 0px;
  
   
 
@@ -59,27 +67,25 @@ body{
 
 }
 
-@media(max-width:48rem){
+@media(max-width:768px){
   .App {
-    margin: 0rem 0.3rem 0rem 0.3rem;
+    margin: 0px;
     
   
   }
-
   .container-card{
-    
+    margin: 4px;
   }
-  .about{
+ 
+
   
-    padding-top: 4.7rem;
-  }
-  .containerDesing{
-   
-  }
-  
+ 
+ 
  
   
 }
+
+
 
 
 
