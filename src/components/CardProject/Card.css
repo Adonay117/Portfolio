@@ -4,11 +4,14 @@
     height: 490px;
     min-width: 100px;
     border-radius: 20px;
-    background-color: hsl(72, 18%, 89%);
-    
-    color: #212121;
+    background: linear-gradient(to bottom,hsl(71.489, 47%, 20%),hsla(241, 72%, 46%, 0));
+
     position: relative;
 
+}
+
+.card-project:hover{
+    scale: 1.0;
 }
 .card-info{
     
