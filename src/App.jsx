@@ -28,6 +28,14 @@ function App() {
          title='WORK'/>
        <div className='cardProjects'>
        <Card 
+          ImageProject='game'
+          TitleProject='Paper, rock and Scissors'
+          DescriptionProject='Js Html Css'
+         
+          LinkView='https://adonay117.github.io/'
+          LinkCode='https://github.com/Adonay117/adonay117.github.io'
+        />
+       <Card 
           ImageProject='score'
           TitleProject='Design Score'
           DescriptionProject='React Json'
@@ -44,6 +52,9 @@ function App() {
           LinkView='https://adonayaragon.vercel.app/'
           LinkCode='https://github.com/Adonay117/portfolio'
         />
+
+
+
        
        </div>
        

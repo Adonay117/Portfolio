@@ -14,7 +14,7 @@ export default function Card(props){
     const skills= skill.split(' ')
     //console.log(skills)
     const listSkill= skills.map((tags)=>(
-        <div className={`tags-${tags}`} style={{backgroundColor: "hsl(72, 27%, 36%)", borderRadius:"20px", color: '#C1D476', display:'flex', flexFlow:"1", padding:"10px"}}><p>{tags}</p></div>
+        <div className={`tags-${tags}`} style={{backgroundColor: "hsl(71.489, 47%, 20%)", borderRadius:"20px", color: '#C1D476', display:'flex', flexFlow:"1", padding:"10px"}}><p>{tags}</p></div>
     ));
   
     
